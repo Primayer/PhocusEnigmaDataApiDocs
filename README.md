@@ -26,7 +26,7 @@ Returns all data for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - [%URL%]/logger/serial/begin/end/token
+    - https://leakvisiondata.atriumiot.com/logger/serial/begin/end/token
   2. Params
    - serial: (string)
      - logger serial number
@@ -43,7 +43,7 @@ Returns all data for the logger within the date range
 ##### Example
 
 ```javascript
-const path = '[%URL%]/logger/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/logger/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -59,7 +59,7 @@ Returns all info for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - [%URL%]/logger/info/serial/begin/end/token
+    - https://leakvisiondata.atriumiot.com/logger/info/serial/begin/end/token
   2. Params
    - serial: (string)
      - logger serial number
@@ -76,7 +76,7 @@ Returns all info for the logger within the date range
 ##### Example
 
 ```javascript
-const path = '[%URL%]/logger/info/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/logger/info/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -92,7 +92,7 @@ Returns signal data for the logger within the date range
 
 ##### Signature
   1. Endpoint
-    - [%URL%]/logger/signal/serial/begin/end/token
+    - https://leakvisiondata.atriumiot.com/logger/signal/serial/begin/end/token
   2. Params
    - serial: (string)
      - logger serial number
@@ -109,7 +109,7 @@ Returns signal data for the logger within the date range
 ##### Example
 
 ```javascript
-const path = '[%URL%]/logger/signal/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/logger/signal/12345/2021-01-01/2021-01-02/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -125,7 +125,7 @@ Returns Enigma groups with leak count
 
 ##### Signature
    1. Endpoint
-    - [%URL%]/group/summary/date/token
+    - https://leakvisiondata.atriumiot.com/group/summary/date/token
    2. Params
    - date: (string - yyyy-MM-dd)
      - Date at which to get summary
@@ -138,7 +138,7 @@ Returns Enigma groups with leak count
 ##### Example
 
 ```javascript
-const path = '[%URL%]/group/summary/2021-01-01/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/group/summary/2021-01-01/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -154,7 +154,7 @@ Returns leak summary for group
 
 ##### Signature
    1. Endpoint
-    - [%URL%]/group/id/date/token
+    - https://leakvisiondata.atriumiot.com/group/id/date/token
   2. Params
    - id: (Int)
      - group Id (returned in the summary)
@@ -169,7 +169,7 @@ Returns leak summary for group
 ##### Example
 
 ```javascript
-const path = '[%URL%]/group/1234/2021-01-01/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/group/1234/2021-01-01/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -185,7 +185,7 @@ Returns audio data for group
 
 ##### Signature
    1. Endpoint
-    - [%URL%]/group/audio/id/date/token
+    - https://leakvisiondata.atriumiot.com/group/audio/id/date/token
   2. Params
    - id: (Int)
      - group Id (returned in the summary)
@@ -200,7 +200,7 @@ Returns audio data for group
 ##### Example
 
 ```javascript
-const path = '[%URL%]/group/audio/1234/2021-01-01/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/group/audio/1234/2021-01-01/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -216,7 +216,7 @@ Returns logger report csv
 
 ##### Signature
    1. Endpoint
-    - [%URL%]/report/logger/date/token
+    - https://leakvisiondata.atriumiot.com/report/logger/date/token
   2. Params
    - date: (string - yyyy-MM-dd)
      - Date at which to run the report.
@@ -229,7 +229,7 @@ Returns logger report csv
 ##### Example
 
 ```javascript
-const path = '[%URL%]/report/logger/2021-01-01/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/report/logger/2021-01-01/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
@@ -245,7 +245,7 @@ Returns Phocus DMA report csv
 
 ##### Signature
    1. Endpoint
-    - [%URL%]/report/dma/begin/end/token
+    - https://leakvisiondata.atriumiot.com/report/dma/begin/end/token
   2. Params
    - begin: (string - yyyy-MM-dd HH:mm )
      - Date at which to start querying.
@@ -260,7 +260,7 @@ Returns Phocus DMA report csv
 ##### Example
 
 ```javascript
-const path = '[%URL%]/report/dma/2021-01-01 00:00/2021-01-02 00:00/00000000-0000-0000-0000-000000000000'
+const path = 'https://leakvisiondata.atriumiot.com/report/dma/2021-01-01 00:00/2021-01-02 00:00/00000000-0000-0000-0000-000000000000'
 
 fetch(path).then(function(response) {
     console.log(response);
