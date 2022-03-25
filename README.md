@@ -368,6 +368,6 @@ Returns Phocus DMA report csv
 
 ##### Example
 
-https://leakvisiondata.atriumiot.com/report/dma/2021-01-01 00:00/2021-01-02 00:00/00000000-0000-0000-0000-000000000000
+https://leakvisiondata.atriumiot.com/report/dma/2021-01-01%2000:00/2021-01-02%2000:00/00000000-0000-0000-0000-000000000000
 
 <br />
