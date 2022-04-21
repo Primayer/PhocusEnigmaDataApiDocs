@@ -19,11 +19,11 @@ This API provides access to the data recorded by a Phocus/Enigma logger. To use 
 - [*dmareport*](#dmareportbegin-end-token): CSV Phocus Dma report.
 
 #### Enumerations
-- [*PoIStatus*](#poistatus): PoI status enums.
-- [*LeakTypes*](#leaktypes): Leak type enums.
-- [*AssetLeakTypes*](#assetleaktypes): Asset Leak type enums.
-- [*MethodTypes*](#methodtypes): Method type enums.
-- [*PipeMaterials*](#pipematerials): Pipe material enums.
+- [*PoI Status*](#poi-status): PoI status enums.
+- [*Leak Types*](#leak-types): Leak type enums.
+- [*Asset Leak Types*](#asset-leak-types): Asset Leak type enums.
+- [*Method Types*](#method-types): Method type enums.
+- [*Pipe Materials*](#pipe-materials): Pipe material enums.
 
 # API
 
@@ -134,10 +134,10 @@ Returns all info for the logger within the date range
       cnv: int,
       lcf: int,
       timestamp: string,
-	    latitude: double,
+      latitude: double,
       longitude: double,
-	    gain: int,
-	    scale: int,
+      gain: int,
+      scale: int,
     }
   ]
 }]
@@ -156,10 +156,10 @@ https://leakvisiondata.atriumiot.com/logger/info/12345/2021-01-01/2021-01-02/000
       "cnv": 10,
       "lcf": 1,
       "timestamp": "2022-03-25 12:00",
-	    "latitude": 50.1,
+      "latitude": 50.1,
       "longitude": -1.1,
-	    "gain": 4,
-	    "scale": 123456,
+      "gain": 4,
+      "scale": 123456,
     }
   ]
 }]
