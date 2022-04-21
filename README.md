@@ -433,7 +433,7 @@ https://leakvisiondata.atriumiot.com/group/poi/1234/00000000-0000-0000-0000-0000
       }
     ]
   },
-  correlations: [
+  "correlations": [
     {
       "date": "2022-01-01",
       "confidence": 65,
@@ -444,7 +444,7 @@ https://leakvisiondata.atriumiot.com/group/poi/1234/00000000-0000-0000-0000-0000
       "correction": -123,
       "filterMin": 375,
       "filterMax": 675,
-      pipes: [
+      "pipes": [
         {
           "material": 0,
           "diameter": 72.6,
