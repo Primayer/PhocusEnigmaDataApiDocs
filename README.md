@@ -13,7 +13,7 @@ This API provides access to the data recorded by a Phocus/Enigma logger. To use 
 - [*signal*](#signalserial-begin-end-token): Returns signal for logger specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupid-date-token): Returns leak summary for group.
-- [*poi*](#id-token): Returns PoI items for group.
+- [*poi*](#poiid-token): Returns PoI items for group.
 - [*groupaudio*](#groupaudioid-date-token): Returns audio for group.
 - [*loggerreport*](#loggerreportdate-token): CSV logger report.
 - [*dmareport*](#dmareportbegin-end-token): CSV Phocus Dma report.
