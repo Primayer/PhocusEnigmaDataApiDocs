@@ -13,7 +13,7 @@ This API provides access to the data recorded by a Phocus/Enigma logger. To use 
 - [*signal*](#signalserial-begin-end-token): Returns signal for logger specified by date time range.
 - [*summary*](#summarydate-token): Returns all Enigma groups with leak count.
 - [*group*](#groupid-date-token): Returns leak summary for group.
-- [*poi*](#groupid-token): Returns PoI items for group.
+- [*poi*](#id-token): Returns PoI items for group.
 - [*groupaudio*](#groupaudioid-date-token): Returns audio for group.
 - [*loggerreport*](#loggerreportdate-token): CSV logger report.
 - [*dmareport*](#dmareportbegin-end-token): CSV Phocus Dma report.
@@ -24,6 +24,7 @@ This API provides access to the data recorded by a Phocus/Enigma logger. To use 
 - [*Asset Leak Types*](#asset-leak-types): Asset Leak type enums.
 - [*Method Types*](#method-types): Method type enums.
 - [*Pipe Materials*](#pipe-materials): Pipe material enums.
+- [*No Leak Reasons*](#no-leak-reasons): No Leak reasons enums.
 
 # API
 
@@ -358,11 +359,11 @@ Returns PoI items for group
         actualLeakType: int
       }
     ],
-	noLeak: {
-	  reason: int,
-	  methods: [int],
-	  dateFound: string
-	}
+    noLeak: {
+      reason: int,
+      methods: [int],
+      dateFound: string
+    }
   },
   correlations: [
     {
@@ -437,11 +438,11 @@ https://leakvisiondata.atriumiot.com/group/poi/1234/00000000-0000-0000-0000-0000
         "actualLeakType": null
       }
     ],
-	noLeak: {
-	  "reason": 1,
-	  "methods": [0,1],
-	  "dateFound": "2022-01-20"
-	}
+    noLeak: {
+      "reason": 1,
+      "methods": [0,1],
+      "dateFound": "2022-01-20"
+    }
   },
   "correlations": [
     {
@@ -670,5 +671,16 @@ https://leakvisiondata.atriumiot.com/report/dma/2021-01-01%2000:00/2021-01-02%20
   SteelConcreteLine = 11,
   AsbestosCement = 12,
   SpunIron = 13
+}
+</pre>
+
+# No Leak Reasons
+<pre>
+{
+  AirConditioningUnit = 0,
+  ElectricalNoise = 1,
+  IndustrialUser = 2,
+  PRV = 3,
+  Other = 4
 }
 </pre>
