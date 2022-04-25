@@ -357,7 +357,12 @@ Returns PoI items for group
         actualRepairDate: string,
         actualLeakType: int
       }
-    ]
+    ],
+	noLeak: {
+	  reason: int,
+	  methods: [int],
+	  dateFound: string
+	}
   },
   correlations: [
     {
@@ -431,7 +436,12 @@ https://leakvisiondata.atriumiot.com/group/poi/1234/00000000-0000-0000-0000-0000
         "actualRepairDate": null,
         "actualLeakType": null
       }
-    ]
+    ],
+	noLeak: {
+	  "reason": 1,
+	  "methods": [0,1],
+	  "dateFound": "2022-01-20"
+	}
   },
   "correlations": [
     {
