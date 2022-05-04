@@ -681,6 +681,7 @@ https://leakvisiondata.atriumiot.com/report/dma/2021-01-01%2000:00/2021-01-02%20
   ElectricalNoise = 1,
   IndustrialUser = 2,
   PRV = 3,
-  Other = 4
+  Other = 4,
+  Usage = 5
 }
 </pre>
