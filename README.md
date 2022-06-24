@@ -4,7 +4,7 @@ Questions? Find us at [development@ovarro.com](mailto:development@primayer.co.uk
 
 # Phocus/Enigma Data Access
 
-This API provides access to the data recorded by a Phocus/Enigma logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the account management section of [Atrium](https://atriumiot.com).
+This API provides access to the data recorded by a Phocus/Enigma logger. To use the API third parties must provide an authorization token with each request. The authorization token can be found within the account management section of [Atrium](https://atriumiot.com/accountmanagement).
 
 # Methods
 
